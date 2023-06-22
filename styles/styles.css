@@ -236,6 +236,10 @@ body {
   fill: var(--color-large-gray);
 }
 
+.course {
+  padding-bottom: 126px;
+}
+
 .course__header {
   margin: 0;
   margin-bottom: 40px;
@@ -331,4 +335,8 @@ body {
 
 .course__table-group:not(:first-child) .course__table-header {
   display: none;
+}
+
+.course__loading {
+  text-align: center;
 }

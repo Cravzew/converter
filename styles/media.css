@@ -180,7 +180,7 @@
   }
 
   .container {
-    padding: 0px 22px;
+    padding: 0px 15px;
   }
 
   .converter__header {
@@ -247,6 +247,7 @@
   .course__table-body-course {
     font-size: 16px;
     line-height: 20px;
+    padding: 0;
   }
 
   .course__table-header-code,
@@ -254,6 +255,19 @@
   .course__table-header-valute,
   .course__table-header-course {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 14px;
+    padding: 0;
+  }
+
+  .course__table-body-code,
+  .course__table-body-number,
+  .course__table-body-valute,
+  .course__table-body-course,
+  .course__table-header-code,
+  .course__table-header-number,
+  .course__table-header-valute,
+  .course__table-header-course {
+    justify-content: center;
+    text-align: center;
   }
 }
