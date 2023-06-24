@@ -3,8 +3,6 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-		name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Конвертер валют</title>
 	<link href="./styles/normalize.css" rel="stylesheet">
@@ -23,9 +21,9 @@
 					<p class="converter__convert-title">
 						У меня имеется
 					</p>
-					<div class="converter__convert-box">
+					<div id="converter__convert-box" class="converter__convert-box">
 						<p class="converter__convert-boxtext">
-							RUR
+							EUR
 						</p>
 						<div class="converter__convert-boxarrow">
 							<svg width="14" height="8" viewBox="0 0 14 8" fill="none"
@@ -34,7 +32,7 @@
 							</svg>
 						</div>
 					</div>
-					<input class="converter__convert-textarea" type="number">
+					<input data-value="91.4933" id="convert" class="converter__convert-textarea" type="number">
 				</div>
 				<button class="converter__switcher-desktop">
 					<svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +55,7 @@
 					</p>
 					<div class="converter__convert-box">
 						<p class="converter__convert-boxtext">
-							EUR
+							RUR
 						</p>
 						<div class="converter__convert-boxarrow">
 							<svg width="14" height="8" viewBox="0 0 14 8" fill="none"
@@ -66,7 +64,7 @@
 							</svg>
 						</div>
 					</div>
-					<input class="converter__convert-textarea" type="number">
+					<input id="converted" readonly class="converter__convert-textarea" type="number">
 				</div>
 			</div>
 		</div>

@@ -172,6 +172,49 @@
     width: 100%;
     max-width: 400px;
   }
+
+  .converter__selecter-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .converter__selecter-item {
+    max-width: 476px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .converter__selecter {
+    max-width: 540px;
+    padding: 24px 32px;
+    right: 1px;
+    top: 75px;
+  }
+
+  .converter__selecter-button {
+    max-width: 476px;
+    width: 100%;
+  }
+
+  .converter__selecter-item:not(:nth-child(n + 31)) {
+    margin-bottom: 0;
+  }
+
+  .converter__selecter-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .converter__selecter-button span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .converter__selecter-button strong {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
 }
 
 @media (max-width: 578px) {
@@ -269,5 +312,47 @@
   .course__table-header-course {
     justify-content: center;
     text-align: center;
+  }
+
+  .converter__selecter {
+    max-width: 600px;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 98px;
+    right: 0;
+    top: -120px;
+    overflow-y: scroll;
+    box-shadow: none;
+    height: 100vh;
+    padding: 0 15px;
+    padding-top: 32px;
+  }
+
+  .converter__selecter-button {
+    max-width: initial;
+  }
+
+  .converter__selecter-button span {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .converter__selecter-button strong {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  .converter__selecter-button {
+    text-align: left;
+    max-width: initial;
+  }
+
+  .converter__selecter-item {
+    max-width: initial;
+  }
+
+  .converter__selector-close {
+    display: block;
   }
 }

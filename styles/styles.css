@@ -134,7 +134,7 @@ body {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 1020px;
   padding: 0 40px;
   margin: 0 auto;
 }
@@ -157,6 +157,7 @@ body {
 .converter__content {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .converter__convert-title {
@@ -315,8 +316,9 @@ body {
   align-items: center;
 }
 
-.course__table-body-code svg { 
+.course__table-body-code svg {
   margin-right: 8px;
+  box-shadow: 0px 5px 13px rgba(192, 202, 214, 0.5);
 }
 
 .course__table-body-code,
@@ -339,4 +341,77 @@ body {
 
 .course__loading {
   text-align: center;
+}
+
+.converter__selecter {
+  display: block;
+  max-width: 940px;
+  width: 100%;
+  position: absolute;
+  padding: 32px;
+  top: 80px;
+  background-color: var(--color-white);
+  box-shadow: 0px 5px 13px rgba(192, 202, 214, 0.5);
+  z-index: 1;
+}
+
+.is-active {
+  display: block;
+}
+
+.converter__selecter-item {
+  width: 242px;
+  margin-right: 75px;
+}
+
+.converter__selecter-item:not(:nth-child(n + 41)) {
+  margin-bottom: 18px;
+}
+
+.converter__selecter-button {
+  width: 242px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.converter__selecter-button span {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--color-large-gray);
+  transition: color 0.2s ease-in-out;
+}
+
+.converter__selecter-button:focus span,
+.converter__selecter-button:focus-visible span,
+.converter__selecter-button:hover span,
+.converter__selecter-button:active span {
+  color: var(--color-blue);
+}
+
+.converter__selecter-button:focus strong,
+.converter__selecter-button:focus-visible strong,
+.converter__selecter-button:hover strong,
+.converter__selecter-button:active strong {
+  color: var(--color-blue);
+}
+
+.converter__selecter-button strong {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  transition: color 0.2s ease-in-out;
+}
+
+.converter__selecter-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.converter__selector-close {
+  display: none;
+  margin-bottom: 20px;
 }
